@@ -1,5 +1,6 @@
 package com.example.urlshortener.shortener.web;
 
+import com.example.urlshortener.shortener.web.doc.ShortenUrlDoc;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.example.urlshortener.shortener.web;
+package com.example.urlshortener.shortener.web.doc;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.Content;
