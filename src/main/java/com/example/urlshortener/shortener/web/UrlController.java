@@ -2,6 +2,7 @@ package com.example.urlshortener.shortener.web;
 
 import com.example.urlshortener.shortener.app.port.ResolveUrlPort;
 import com.example.urlshortener.shortener.app.port.ShortenUrlPort;
+import com.example.urlshortener.shortener.web.doc.ResolveUrlDoc;
 import com.example.urlshortener.shortener.web.doc.ShortenUrlDoc;
 import com.example.urlshortener.shortener.web.model.ResolveUrlResponse;
 import com.example.urlshortener.shortener.web.model.ShortenUrlRequest;
@@ -32,6 +33,7 @@ public class UrlController {
     return ShortenUrlResponse.from(shortenedUrl);
   }
 
+  @ResolveUrlDoc
   @GetMapping("/{shortCode}")
   public ResolveUrlResponse resolve(@PathVariable String shortCode) {
     var mapping = resolveUrlPort.resolve(shortCode);
