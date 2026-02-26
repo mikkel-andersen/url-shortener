@@ -1,5 +1,6 @@
 package com.example.urlshortener.shortener;
 
+import com.example.urlshortener.shortener.app.ResolveUrlUseCase;
 import com.example.urlshortener.shortener.app.ShortenUrlUseCase;
 import com.example.urlshortener.shortener.app.port.UrlRepositoryPort;
 import com.example.urlshortener.shortener.infra.db.InMemoryUrlRepository;
@@ -15,7 +16,12 @@ public class AppConfig {
   }
 
   @Bean
-  public ShortenUrlUseCase shortenUrlUseCase(UrlRepositoryPort repository) {
+  public ResolveUrlUseCase resolveUrlUseCase(final UrlRepositoryPort repository) {
+    return new ResolveUrlUseCase(repository);
+  }
+
+  @Bean
+  public ShortenUrlUseCase shortenUrlUseCase(final UrlRepositoryPort repository) {
     return new ShortenUrlUseCase(repository);
   }
 }
