@@ -1,7 +1,6 @@
 package com.example.urlshortener.shortener.app.port;
 
 import com.example.urlshortener.shortener.domain.UrlMapping;
-
 import java.util.Optional;
 
 public interface UrlRepositoryPort {

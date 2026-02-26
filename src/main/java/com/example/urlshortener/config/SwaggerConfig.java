@@ -7,12 +7,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
-    @Bean
-    public OpenAPI urlShortenerOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title("URL Shortener API")
-                        .version("1.0")
-                        .description("API for shortening URLs and generating short codes"));
-    }
+  @Bean
+  public OpenAPI urlShortenerOpenAPI() {
+    return new OpenAPI()
+        .info(
+            new Info()
+                .title("URL Shortener API")
+                .version("1.0")
+                .description("API for shortening URLs and generating short codes"));
+  }
 }

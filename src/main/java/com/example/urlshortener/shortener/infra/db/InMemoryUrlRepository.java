@@ -2,7 +2,6 @@ package com.example.urlshortener.shortener.infra.db;
 
 import com.example.urlshortener.shortener.app.port.UrlRepositoryPort;
 import com.example.urlshortener.shortener.domain.UrlMapping;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
