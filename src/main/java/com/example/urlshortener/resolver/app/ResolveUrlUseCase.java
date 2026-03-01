@@ -1,10 +1,10 @@
-package com.example.urlshortener.shortener.app;
+package com.example.urlshortener.resolver.app;
 
-import com.example.urlshortener.shortener.app.port.ResolveUrlPort;
+import com.example.urlshortener.resolver.app.port.UrlResolverPort;
 import com.example.urlshortener.shortener.app.port.UrlRepositoryPort;
 import com.example.urlshortener.shortener.domain.UrlMapping;
 
-public class ResolveUrlUseCase implements ResolveUrlPort {
+public class ResolveUrlUseCase implements UrlResolverPort {
 
   private final UrlRepositoryPort repository;
 

@@ -1,4 +1,4 @@
-package com.example.urlshortener.shortener.web.doc;
+package com.example.urlshortener.resolver.web.doc;
 
 import com.example.urlshortener.shortener.web.model.ResolveUrlResponse;
 import io.swagger.v3.oas.annotations.Operation;
